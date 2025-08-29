@@ -7,4 +7,4 @@
 
 ## Cursos
 [![Static Badge](https://img.shields.io/badge/Data%20Science-Specialization-%20?style=flat&logo=coursera&color=blue)
-](https://coursera.org/share/ce4e3e15e626d7f259408df81cdc26bf)
+]([https://coursera.org/share/ce4e3e15e626d7f259408df81cdc26bf](https://coursera.org/share/01dfcf9b32c8e5530b7afa2b7310b5a9))
