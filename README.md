@@ -1,5 +1,15 @@
 # Hola, Soy Fernando Valencia! <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px">
 
+## Acerca de mí
+
+Soy ingeniero industrial con experiencia en la gestión de indicadores y en el desarrollo de proyectos de analítica enfocados en la visualización para el seguimiento de KPIs a lo largo de la cadena de suministro.
+
+Mi primera experiencia fue como practicante en la farmacéutica **Genfar**, donde mi principal logro fue desarrollar un **dashboard en Power BI**, automatizando el proceso de **Extracción, Transformación y Carga (ETL)** para monitorear producción, paradas y limpiezas de todos los procesos productivos. Esto permitió visualizar las principales causales de improductividad y facilitar su detección, **contribuyendo a mejorar el indicador OEE** de la compañía.
+
+Luego, en **Carval de Colombia**, continué desarrollando soluciones analíticas para **producción, logística, compras y planeación**. Además, construí una **aplicación en Power Apps** para automatizar la toma de datos de producción y dar seguimiento en Power BI a los tiempos en planta.
+
+A raíz de este camino, decidí cursar la **Maestría en Analítica e Inteligencia de Negocios** en la **Universidad del Valle**, donde profundicé en **Machine Learning** y **Deep Learning**. He complementado mi formación con cursos en **Coursera** y **Platzi**. **Recientemente tomé la decisión de renunciar a mi último trabajo para enfocarme en construir una carrera como científico de datos**, ya que en mi empresa anterior esta área aún no estaba desarrollada.
+
 ## Mira mis publicaciones en Linkedin
 <a href= "https://www.linkedin.com/in/fernando-valencia-mar%C3%ADn-5a915b1a5/">
   <img src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white">
