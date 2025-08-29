@@ -8,7 +8,7 @@ Mi primera experiencia fue como practicante en la farmacéutica **Genfar**, dond
 
 Luego, en **Carval de Colombia**, continué desarrollando soluciones analíticas para **producción, logística, compras y planeación**. Además, construí una **aplicación en Power Apps** para automatizar la toma de datos de producción y dar seguimiento en Power BI a los tiempos en planta.
 
-A raíz de este camino, decidí cursar la **Maestría en Analítica e Inteligencia de Negocios** en la **Universidad del Valle**, donde profundicé en **Machine Learning** y **Deep Learning**. He complementado mi formación con cursos en **Coursera** y **Platzi**. **Recientemente tomé la decisión de renunciar a mi último trabajo para enfocarme en construir una carrera como científico de datos**.
+A raíz de este camino, decidí cursar la **Maestría en Analítica e Inteligencia de Negocios** en la **Universidad del Valle**, donde profundicé en **Machine Learning** y **Deep Learning**. He complementado mi formación con cursos en **Coursera** y **Platzi**. Recientemente tomé la decisión de renunciar a mi último trabajo para enfocarme en construir una carrera como científico de datos.
 
 ## Mira mis publicaciones en Linkedin
 <a href= "https://www.linkedin.com/in/fernando-valencia-mar%C3%ADn-5a915b1a5/">
