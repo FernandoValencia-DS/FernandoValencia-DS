@@ -15,8 +15,9 @@ A raíz de este camino, decidí cursar la **Maestría en Analítica e Inteligenc
 
 Realicé **fine-tuning de `xlm-roberta-base`** para **Reconocimiento de Entidades Nombradas (NER)** en historias clínicas de **cáncer de pulmón**, partiendo de un dataset **anotado en formato BIO**. El objetivo fue construir un **dataset limpio y consistente** para análisis estadístico/ML, manteniendo una taxonomía clínica clara (p. ej., `CANCER_CONCEPT`, `TNM`, `STAGE`, `DRUG`, etc.).
 
-**Modelo en Hugging Face.**  
-[![NER · fine-tuning (base: xlm-roberta-base) — FernandoValencia/xlm-roberta-base-finetuned-ner-pulmon](https://img.shields.io/badge/NER%20·%20fine-tuning%20(base:%20xlm-roberta-base)-FernandoValencia%2Fxlm--roberta--base--finetuned--ner--pulmon-orange?logo=huggingface)](https://huggingface.co/FernandoValencia/xlm-roberta-base-finetuned-ner-pulmon)
+**Modelo en Hugging Face.**   
+[![HF NER model — xlm-roberta-base (finetuned)](https://img.shields.io/badge/Hugging%20Face-NER%20model%20%E2%80%94%20xlm--roberta--base%20(finetuned)-orange?logo=huggingface)](https://huggingface.co/FernandoValencia/xlm-roberta-base-finetuned-ner-pulmon)
+
 
 **Datos.** Corpus clínico en español, **anotado BIO**; división train/valid; entidades clínicas (entre otras): `CANCER_CONCEPT`, `DRUG`, `CHEMOTHERAPY`, `RADIOTHERAPY`, `TNM`, `STAGE`, `DATE`, `SURGERY`, `SMOKER_STATUS`, `FAMILY`, `METRIC`, `QUANTITY`, `OCURRENCE_EVENT`, `IMPLICIT_DATE`.
 
@@ -38,7 +39,6 @@ Realicé **fine-tuning de `xlm-roberta-base`** para **Reconocimiento de Entidade
 - **Bajo soporte/dificultad:** `IMPLICIT_DATE` 0.46 *(frecuencia baja, ~26 muestras; fechas implícitas son más complejas)*
 
 👉 **Repositorio:** https://github.com/FernandoValencia-DS/PLN_SALUD  
-👉 **Modelo (HF):** https://huggingface.co/FernandoValencia/xlm-roberta-base-finetuned-ner-pulmon
 
 <details>
 <summary>Ejemplo de salida</summary>
@@ -53,12 +53,6 @@ Realicé **fine-tuning de `xlm-roberta-base`** para **Reconocimiento de Entidade
 - **CANCER_CONCEPT** → “metástasis en cerebro y hueso” *(0.97)*
 - **TNM** → “T3N2M1” *(1.00)*
 </details>
-
-> Nota rápida: para `IMPLICIT_DATE`, conviene más datos, reglas contextuales o entrenamiento con *distant supervision* para mejorar cobertura.
-
-
-
-
 
 ### Reconocimiento de Entidades Nombradas en Historias Clínicas de Cáncer de Mama
 En este proyecto extraigo entidades clínicas de historias clínicas de cáncer de mama y, mediante un pipeline que encadena dos modelos preentrenados (uno para NER y otro para detección de negación/incertidumbre), asigno a cada entidad su **estatus** (Afirmativa/Negada/Sospechosa). El resultado es un **dataset estructurado y consistente** listo para análisis estadístico y de ML, minimizando ambigüedades del texto libre.
