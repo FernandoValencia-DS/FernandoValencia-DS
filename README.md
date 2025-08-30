@@ -10,6 +10,28 @@ Luego, en **Carval de Colombia**, continué desarrollando soluciones analíticas
 
 A raíz de este camino, decidí cursar la **Maestría en Analítica e Inteligencia de Negocios** en la **Universidad del Valle**, donde profundicé en **Machine Learning** y **Deep Learning**. He complementado mi formación con cursos en **Coursera** y **Platzi**. Recientemente tomé la decisión de renunciar a mi último trabajo para enfocarme en construir una carrera como científico de datos.
 
+## 🚀 Proyectos destacados
+### Reconocimiento de Entidades Nombradas en Historias Clínicas de Cáncer de Mama
+
+Este proyecto teien como fin hacer una extracción de entidades nombradas de una serie de historias clínicas de cancer de mama, ademas poder determinar si la entidad es afirmativa, negada o incierta. Para esto usé estos dos **modelos pre-entrenados de HuggingFace**:
+- _anvorja/breast-cancer-biomedical-ner-sp-1_: Este modelo se encarga de hacer la extracción de las entidades nombradas de la siguiente manera:
+  
+  Texto: Muje de 59 años remitida desde oncología con Adenocarcinoma ductal infiltrante de mama izquierda, moderadamente diferenciado de 2 cm, intervenido mediante mastectomía radical izquierda el 20/06/1991.
+  
+  → 59 años (AGE) [8-15]
+  
+  → remitida (OCURRENCE_EVENT) [16-24]
+  
+  → oncología (CLINICAL_SERVICE) [31-40]
+  
+  → Adenocarcinoma ductal infiltrante de mama izquierda (CANCER_CONCEPT) [45-96]
+  
+  → intervenido (OCURRENCE_EVENT) [134-145]
+  
+  → mastectomía radical izquierda (SURGERY) [155-184]
+  
+  → 20/06/1991 (DATE) [188-198]
+
 ## Mira mis publicaciones en Linkedin
 <a href= "https://www.linkedin.com/in/fernando-valencia-mar%C3%ADn-5a915b1a5/">
   <img src="https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white">
