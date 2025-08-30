@@ -11,6 +11,55 @@ Luego, en **Carval de Colombia**, continué desarrollando soluciones analíticas
 A raíz de este camino, decidí cursar la **Maestría en Analítica e Inteligencia de Negocios** en la **Universidad del Valle**, donde profundicé en **Machine Learning** y **Deep Learning**. He complementado mi formación con cursos en **Coursera** y **Platzi**.
 
 ## 🚀 Proyectos destacados
+### NER clínico en historias de cáncer de pulmón (fine-tuning XLM-RoBERTa)
+
+Realicé **fine-tuning de `xlm-roberta-base`** para **Reconocimiento de Entidades Nombradas (NER)** en historias clínicas de **cáncer de pulmón**, partiendo de un dataset **anotado en formato BIO**. El objetivo fue construir un **dataset limpio y consistente** para análisis estadístico/ML, manteniendo una taxonomía clínica clara (p. ej., `CANCER_CONCEPT`, `TNM`, `STAGE`, `DRUG`, etc.).
+
+**Modelo en Hugging Face.**  
+[![NER · fine-tuning (base: xlm-roberta-base) — FernandoValencia/xlm-roberta-base-finetuned-ner-pulmon](https://img.shields.io/badge/NER%20·%20fine-tuning%20(base:%20xlm-roberta-base)-FernandoValencia%2Fxlm--roberta--base--finetuned--ner--pulmon-orange?logo=huggingface)](https://huggingface.co/FernandoValencia/xlm-roberta-base-finetuned-ner-pulmon)
+
+**Datos.** Corpus clínico en español, **anotado BIO**; división train/valid; entidades clínicas (entre otras): `CANCER_CONCEPT`, `DRUG`, `CHEMOTHERAPY`, `RADIOTHERAPY`, `TNM`, `STAGE`, `DATE`, `SURGERY`, `SMOKER_STATUS`, `FAMILY`, `METRIC`, `QUANTITY`, `OCURRENCE_EVENT`, `IMPLICIT_DATE`.
+
+**Pipeline.** Tokenización XLM-R → etiquetado BIO → entrenamiento NER → evaluación → **export a CSV/JSON**.
+
+**Entrenamiento (validación).**
+| Época | Val. Loss | Precisión | Recall | F1     | Accuracy |
+|:----:|:----------:|:---------:|:------:|:------:|:--------:|
+| 1    | 0.1183     | 0.9034    | 0.9135 | 0.9084 | 0.9701   |
+| 2    | 0.0894     | 0.9160    | 0.9537 | 0.9345 | 0.9768   |
+| 3    | 0.0773     | 0.9264    | 0.9557 | 0.9409 | 0.9802   |
+| 4    | 0.0764     | 0.9272    | 0.9605 | 0.9436 | 0.9804   |
+| **5**| **0.0772** | **0.9255**| **0.9631**| **0.9439**| **0.9804** |
+
+**Desempeño por entidad (muestra).**
+- **Sobresaliente (F1 ≥ 0.96):** `CHEMOTHERAPY` 0.98 · `DATE` 0.98 · `FAMILY` 0.99 · `QUANTITY` 0.96 · `STAGE` 0.97 · `TNM` 0.96
+- **Buen desempeño (0.90–0.95):** `CANCER_CONCEPT` 0.92 · `DRUG` 0.94 · `RADIOTHERAPY` 0.95
+- **A mejorar:** `OCURRENCE_EVENT` 0.80 · `SURGERY` 0.86 · `SMOKER_STATUS` 0.87
+- **Bajo soporte/dificultad:** `IMPLICIT_DATE` 0.46 *(frecuencia baja, ~26 muestras; fechas implícitas son más complejas)*
+
+👉 **Repositorio:** https://github.com/FernandoValencia-DS/PLN_SALUD  
+👉 **Modelo (HF):** https://huggingface.co/FernandoValencia/xlm-roberta-base-finetuned-ner-pulmon
+
+<details>
+<summary>Ejemplo de salida</summary>
+
+**Texto**: “El paciente fue diagnosticado con adenocarcinoma de pulmón estadio IV el 12 de marzo de 2022, con metástasis en cerebro y hueso, y presentó un TNM de T3N2M1.”
+
+- **OCURRENCE_EVENT** → “fue” *(0.50)*
+- **OCURRENCE_EVENT** → “diagnosticado” *(0.99)*
+- **CANCER_CONCEPT** → “adenocarcinoma de pulmón” *(1.00)*
+- **STAGE** → “estadio IV” *(1.00)*
+- **DATE** → “12 de marzo de 2022” *(1.00)*
+- **CANCER_CONCEPT** → “metástasis en cerebro y hueso” *(0.97)*
+- **TNM** → “T3N2M1” *(1.00)*
+</details>
+
+> Nota rápida: para `IMPLICIT_DATE`, conviene más datos, reglas contextuales o entrenamiento con *distant supervision* para mejorar cobertura.
+
+
+
+
+
 ### Reconocimiento de Entidades Nombradas en Historias Clínicas de Cáncer de Mama
 En este proyecto extraigo entidades clínicas de historias clínicas de cáncer de mama y, mediante un pipeline que encadena dos modelos preentrenados (uno para NER y otro para detección de negación/incertidumbre), asigno a cada entidad su **estatus** (Afirmativa/Negada/Sospechosa). El resultado es un **dataset estructurado y consistente** listo para análisis estadístico y de ML, minimizando ambigüedades del texto libre.
 
@@ -49,7 +98,6 @@ En este proyecto extraigo entidades clínicas de historias clínicas de cáncer 
 | 1  | Muje de 59 años remitida desde oncología con Adenocarcinoma ductal infiltrante de mama izquierda…                             | 20/06/1991                                        | DATE                 | Afirmativa |
 
 </details>
-
 
 
 
