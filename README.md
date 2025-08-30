@@ -38,7 +38,7 @@ Realicé **fine-tuning de `xlm-roberta-base`** para **Reconocimiento de Entidade
 - **A mejorar:** `OCURRENCE_EVENT` 0.80 · `SURGERY` 0.86 · `SMOKER_STATUS` 0.87
 - **Bajo soporte/dificultad:** `IMPLICIT_DATE` 0.46 *(frecuencia baja, ~26 muestras; fechas implícitas son más complejas)*
 
-👉 **Repositorio:** https://github.com/FernandoValencia-DS/PLN_SALUD  
+👉 **Repositorio:** https://github.com/FernandoValencia-DS/PLN_SALUD/tree/main/Taller1  
 
 <details>
 <summary>Ejemplo de salida</summary>
@@ -68,7 +68,7 @@ En este proyecto extraigo entidades clínicas de historias clínicas de cáncer 
 
 **Pipeline:** NER → normalización de etiquetas → detección de **negación/incertidumbre** → **export** a CSV (lista para análisis).
  
-👉 **Repositorio:** https://github.com/FernandoValencia-DS/PLN_SALUD
+👉 **Repositorio:** https://github.com/FernandoValencia-DS/PLN_SALUD/tree/main/Taller2
 
 <details>
 <summary>Ejemplo de salida (incluye afirmaciones y negaciones) — ID paciente = 1</summary>
