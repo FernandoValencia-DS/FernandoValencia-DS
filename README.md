@@ -12,26 +12,47 @@ A raíz de este camino, decidí cursar la **Maestría en Analítica e Inteligenc
 
 ## 🚀 Proyectos destacados
 ### Reconocimiento de Entidades Nombradas en Historias Clínicas de Cáncer de Mama
+En este proyecto extraigo entidades clínicas en textos de cáncer de mama y asigno su **estatus** (Afirmativa/Negada/Sospechosa) para construir un **dataset estructurado y consistente** que luego pueda **analizarse** (estadística/ML) sin ambigüedades.
 
-Este proyecto teien como fin hacer una extracción de entidades nombradas de una serie de historias clínicas de cancer de mama, ademas poder determinar si la entidad es afirmativa, negada o incierta. Para esto usé estos dos **modelos pre-entrenados de HuggingFace**:
-- _anvorja/breast-cancer-biomedical-ner-sp-1_: Este modelo se encarga de hacer la extracción de las entidades nombradas de la siguiente manera:
-  
-  Texto: Muje de 59 años remitida desde oncología con Adenocarcinoma ductal infiltrante de mama izquierda, moderadamente diferenciado de 2 cm, intervenido mediante mastectomía radical izquierda el 20/06/1991.
-  
-  → 59 años (AGE) [8-15]
-  
-  → remitida (OCURRENCE_EVENT) [16-24]
-  
-  → oncología (CLINICAL_SERVICE) [31-40]
-  
-  → Adenocarcinoma ductal infiltrante de mama izquierda (CANCER_CONCEPT) [45-96]
-  
-  → intervenido (OCURRENCE_EVENT) [134-145]
-  
-  → mastectomía radical izquierda (SURGERY) [155-184]
-  
-  → 20/06/1991 (DATE) [188-198]
-  En este repositorio documento la carga de las historias clínincas, la carga del modelo y su aplicación en las 106 historias clínicas que tenía a disposición: https://github.com/FernandoValencia-DS/PLN_SALUD/blob/main/Entregable1_Neg_Inc.ipynb
+**Modelos (Hugging Face).**
+- NER: [`anvorja/breast-cancer-biomedical-ner-sp-1`](https://huggingface.co/anvorja/breast-cancer-biomedical-ner-sp-1)
+- Negación/Inc.: [`JuanSolarte99/bert-base-uncased-finetuned-ner-negation_detection_NUBES`](https://huggingface.co/JuanSolarte99/bert-base-uncased-finetuned-ner-negation_detection_NUBES)
+
+[![HF anvorja/breast-cancer-biomedical-ner-sp-1](https://img.shields.io/badge/Hugging%20Face-anvorja%2Fbreast--cancer--biomedical--ner--sp--1-orange)](https://huggingface.co/anvorja/breast-cancer-biomedical-ner-sp-1)
+[![HF JuanSolarte99/bert-base-uncased-finetuned-ner-negation_detection_NUBES](https://img.shields.io/badge/Hugging%20Face-JuanSolarte99%2Fbert--base--uncased--finetuned--ner--negation__detection__NUBES-orange)](https://huggingface.co/JuanSolarte99/bert-base-uncased-finetuned-ner-negation_detection_NUBES)
+
+**Datos:** 106 historias clínicas **anonimizadas** (ES).
+
+**Pipeline:** NER → normalización de etiquetas → detección de **negación/incertidumbre** → **export** a CSV (lista para análisis).
+ 
+👉 **Repositorio:** https://github.com/FernandoValencia-DS/PLN_SALUD
+
+<details>
+<summary>Ejemplo de salida (incluye afirmaciones y negaciones) — ID paciente = 1</summary>
+
+> *El texto proviene del documento original y puede contener errores de digitación propios de la fuente.*
+
+| ID | Fragmento                                                                                                                     | Span                                              | Entidad NER          | Estatus    |
+|---:|-------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------|----------------------|------------|
+| 1  | RIMERA CONSULTA DE ONCOLOGÍA MÉDICA.                                                                                          | ONCOLOGÍA MÉDICA                                  | CLINICAL_SERVICE     | Afirmativa |
+| 1  | Antecedentes Personales:- Alergia a Fluconazol.                                                                               | Alergia a Fluconazol                              | ALLERGIES            | Afirmativa |
+| 1  | - No HTA.                                                                                                                     | No HTA                                            | COMORBIDITY          | Negada     |
+| 1  | No DM.                                                                                                                        | No DM                                             | COMORBIDITY          | Negada     |
+| 1  | No DL.                                                                                                                        | No DL                                             | COMORBIDITY          | Negada     |
+| 1  | - Niega habitos toxicos.- Candidiasis recurrentes- Iqx: ninguna.                                                              | Candidiasis recurrentes                           | GINECOLOGICAL_HISTORY| Afirmativa |
+| 1  | Muje de 59 años remitida desde oncología con Adenocarcinoma ductal infiltrante de mama izquierda…                             | 59 años                                           | AGE                  | Afirmativa |
+| 1  | Muje de 59 años remitida desde oncología con Adenocarcinoma ductal infiltrante de mama izquierda…                             | remitida                                          | OCURRENCE_EVENT      | Afirmativa |
+| 1  | Muje de 59 años remitida desde oncología con Adenocarcinoma ductal infiltrante de mama izquierda…                             | oncología                                         | CLINICAL_SERVICE     | Afirmativa |
+| 1  | Muje de 59 años remitida desde oncología con Adenocarcinoma ductal infiltrante de mama izquierda…                             | Adenocarcinoma ductal infiltrante de mama izquierda | CANCER_CONCEPT     | Afirmativa |
+| 1  | Muje de 59 años remitida desde oncología con Adenocarcinoma ductal infiltrante de mama izquierda…                             | intervenido                                       | OCURRENCE_EVENT      | Afirmativa |
+| 1  | Muje de 59 años remitida desde oncología con Adenocarcinoma ductal infiltrante de mama izquierda…                             | mastectomía radical izquierda                     | SURGERY              | Afirmativa |
+| 1  | Muje de 59 años remitida desde oncología con Adenocarcinoma ductal infiltrante de mama izquierda…                             | 20/06/1991                                        | DATE                 | Afirmativa |
+
+</details>
+
+
+
+
 
 ## Mira mis publicaciones en Linkedin
 <a href= "https://www.linkedin.com/in/fernando-valencia-mar%C3%ADn-5a915b1a5/">
