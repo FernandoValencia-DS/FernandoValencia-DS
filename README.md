@@ -8,7 +8,7 @@ Mi primera experiencia fue como practicante en la farmacéutica **Genfar**, dond
 
 Luego, en **Carval de Colombia**, continué desarrollando soluciones analíticas para **producción, logística, compras y planeación**. Además, construí una **aplicación en Power Apps** para automatizar la toma de datos de producción y dar seguimiento en Power BI a los tiempos en planta.
 
-A raíz de este camino, decidí cursar la **Maestría en Analítica e Inteligencia de Negocios** en la **Universidad del Valle**, donde profundicé en **Machine Learning** y **Deep Learning**. He complementado mi formación con cursos en **Coursera** y **Platzi**. Recientemente tomé la decisión de renunciar a mi último trabajo para enfocarme en construir una carrera como científico de datos.
+A raíz de este camino, decidí cursar la **Maestría en Analítica e Inteligencia de Negocios** en la **Universidad del Valle**, donde profundicé en **Machine Learning** y **Deep Learning**. He complementado mi formación con cursos en **Coursera** y **Platzi**.
 
 ## 🚀 Proyectos destacados
 ### Reconocimiento de Entidades Nombradas en Historias Clínicas de Cáncer de Mama
@@ -31,6 +31,7 @@ Este proyecto teien como fin hacer una extracción de entidades nombradas de una
   → mastectomía radical izquierda (SURGERY) [155-184]
   
   → 20/06/1991 (DATE) [188-198]
+  En este repositorio documento la carga de las historias clínincas, la carga del modelo y su aplicación en las 106 historias clínicas que tenía a disposición: https://github.com/FernandoValencia-DS/PLN_SALUD/blob/main/Entregable1_Neg_Inc.ipynb
 
 ## Mira mis publicaciones en Linkedin
 <a href= "https://www.linkedin.com/in/fernando-valencia-mar%C3%ADn-5a915b1a5/">
