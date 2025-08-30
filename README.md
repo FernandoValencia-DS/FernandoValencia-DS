@@ -11,7 +11,7 @@ Luego, en **Carval de Colombia**, continué desarrollando soluciones analíticas
 A raíz de este camino, decidí cursar la **Maestría en Analítica e Inteligencia de Negocios** en la **Universidad del Valle**, donde profundicé en **Machine Learning** y **Deep Learning**. He complementado mi formación con cursos en **Coursera** y **Platzi**.
 
 ## 🚀 Proyectos destacados
-### NER clínico en historias de cáncer de pulmón (fine-tuning XLM-RoBERTa)
+### 🔷 NER clínico en historias de cáncer de pulmón (fine-tuning XLM-RoBERTa)
 
 Realicé **fine-tuning de `xlm-roberta-base`** para **Reconocimiento de Entidades Nombradas (NER)** en historias clínicas de **cáncer de pulmón**, partiendo de un dataset **anotado en formato BIO**. El objetivo fue construir un **dataset limpio y consistente** para análisis estadístico/ML, manteniendo una taxonomía clínica clara (p. ej., `CANCER_CONCEPT`, `TNM`, `STAGE`, `DRUG`, etc.).
 
@@ -54,7 +54,7 @@ Realicé **fine-tuning de `xlm-roberta-base`** para **Reconocimiento de Entidade
 - **TNM** → “T3N2M1” *(1.00)*
 </details>
 
-### Reconocimiento de Entidades Nombradas en Historias Clínicas de Cáncer de Mama
+### 🔷 Reconocimiento de Entidades Nombradas en Historias Clínicas de Cáncer de Mama
 En este proyecto extraigo entidades clínicas de historias clínicas de cáncer de mama y, mediante un pipeline que encadena dos modelos preentrenados (uno para NER y otro para detección de negación/incertidumbre), asigno a cada entidad su **estatus** (Afirmativa/Negada/Sospechosa). El resultado es un **dataset estructurado y consistente** listo para análisis estadístico y de ML, minimizando ambigüedades del texto libre.
 
 
