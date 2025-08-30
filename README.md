@@ -93,6 +93,34 @@ En este proyecto extraigo entidades clínicas de historias clínicas de cáncer 
 
 </details>
 
+### 🔷 Modelos predictivos de diabetes (resampling + comparativa de algoritmos)
+
+En este proyecto clasifico riesgo de **diabetes** en un dataset **desbalanceado**. Para mitigar el sesgo del entrenamiento, aplico **RandomUnderSampler + SMOTE** **solo en el set de entrenamiento** (para evitar *data leakage*) y luego comparo varios modelos clásicos y de *deep learning*.
+
+**Datos (clase objetivo `diabetes`).**
+- **Distribución original:** 0 = 64 037 · 1 = 5 950  
+- **Distribución tras resampling (solo train):** 0 = 14 875 · 1 = 11 900
+
+**Modelos comparados.** Árbol de Decisión · Random Forest · XGBoost · SVM · MLP
+
+**Resultados (validación).**
+| Modelo                       | Accuracy | Precision | Recall | F1-score |   AUC |
+|-----------------------------|:--------:|:---------:|:------:|:--------:|------:|
+| Árbol de Decisión           |  0.863   |   0.375   | 0.920  |  0.533   | 0.960 |
+| Random Forest               |  0.939   |   0.604   | 0.822  |  0.696   | 0.972 |
+| XGBoost                     |  0.927   |   0.542   | 0.880  |  0.671   | 0.977 |
+| Máquina de Soporte Vectorial|  0.934   |   0.580   | 0.814  |  0.677   | 0.955 |
+| Multi-Layer Perceptron (MLP)|  0.950   |   0.651   | 0.827  |  0.729   | 0.976 |
+
+**Conclusiones clave.**
+- **Accuracy:** el mejor es **MLP (95%)**, pero **accuracy** por sí solo no es fiable con clases desbalanceadas.  
+- **Recall (sensibilidad):** **Árbol de Decisión (92%)** maximiza verdaderos positivos —útil si priorizas **no perder casos**.  
+- **Precision:** **MLP (≈65%)** reduce falsos positivos frente a otros modelos; **Árbol** sacrifica precisión por alta sensibilidad.  
+- **F1-score (balance):** **MLP** ofrece el mejor compromiso entre detectar diabetes y contener falsos positivos.  
+- **AUC:** **XGBoost (0.977)** es el más alto, muy cercano a **MLP (0.976)** y **RF (0.972)**.
+
+👉 **Notebook:** https://github.com/FernandoValencia-DS/data-science-portfolio/blob/main/Clasificaci%C3%B3n/Diabetes.ipynb
+
 
 
 
