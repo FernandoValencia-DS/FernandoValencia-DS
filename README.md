@@ -12,14 +12,14 @@ A raíz de este camino, decidí cursar la **Maestría en Analítica e Inteligenc
 
 ## 🚀 Proyectos destacados
 ### Reconocimiento de Entidades Nombradas en Historias Clínicas de Cáncer de Mama
-En este proyecto extraigo entidades clínicas en textos de cáncer de mama y asigno su **estatus** (Afirmativa/Negada/Sospechosa) para construir un **dataset estructurado y consistente** que luego pueda **analizarse** (estadística/ML) sin ambigüedades.
+En este proyecto extraigo entidades clínicas de historias clínicas de cáncer de mama y, mediante un pipeline que encadena dos modelos preentrenados (uno para NER y otro para detección de negación/incertidumbre), asigno a cada entidad su **estatus** (Afirmativa/Negada/Sospechosa). El resultado es un **dataset estructurado y consistente** listo para análisis estadístico y de ML, minimizando ambigüedades del texto libre.
 
-**Modelos (Hugging Face).**
-- NER: [`anvorja/breast-cancer-biomedical-ner-sp-1`](https://huggingface.co/anvorja/breast-cancer-biomedical-ner-sp-1)
-- Negación/Inc.: [`JuanSolarte99/bert-base-uncased-finetuned-ner-negation_detection_NUBES`](https://huggingface.co/JuanSolarte99/bert-base-uncased-finetuned-ner-negation_detection_NUBES)
 
-[![HF anvorja/breast-cancer-biomedical-ner-sp-1](https://img.shields.io/badge/Hugging%20Face-anvorja%2Fbreast--cancer--biomedical--ner--sp--1-orange)](https://huggingface.co/anvorja/breast-cancer-biomedical-ner-sp-1)
-[![HF JuanSolarte99/bert-base-uncased-finetuned-ner-negation_detection_NUBES](https://img.shields.io/badge/Hugging%20Face-JuanSolarte99%2Fbert--base--uncased--finetuned--ner--negation__detection__NUBES-orange)](https://huggingface.co/JuanSolarte99/bert-base-uncased-finetuned-ner-negation_detection_NUBES)
+
+**Modelos (Hugging Face).**  
+[![NER · extracción de entidades — anvorja/breast-cancer-biomedical-ner-sp-1](https://img.shields.io/badge/NER%20%C2%B7%20extracci%C3%B3n%20de%20entidades-anvorja%2Fbreast--cancer--biomedical--ner--sp--1-orange?logo=huggingface)](https://huggingface.co/anvorja/breast-cancer-biomedical-ner-sp-1)
+[![Negación/Incertidumbre · estatus — JuanSolarte99/bert-base-uncased-finetuned-ner-negation_detection_NUBES](https://img.shields.io/badge/Negaci%C3%B3n%2FIncertidumbre%20%C2%B7%20estatus-JuanSolarte99%2Fbert--base--uncased--finetuned--ner--negation__detection__NUBES-orange?logo=huggingface)](https://huggingface.co/JuanSolarte99/bert-base-uncased-finetuned-ner-negation_detection_NUBES)
+
 
 **Datos:** 106 historias clínicas **anonimizadas** (ES).
 
