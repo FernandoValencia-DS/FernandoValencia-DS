@@ -19,9 +19,9 @@ Realicé **fine-tuning de `xlm-roberta-base`** para **Reconocimiento de Entidade
 [![HF NER model — xlm-roberta-base (finetuned)](https://img.shields.io/badge/Hugging%20Face-NER%20model%20%E2%80%94%20xlm--roberta--base%20(finetuned)-orange?logo=huggingface)](https://huggingface.co/FernandoValencia/xlm-roberta-base-finetuned-ner-pulmon)
 
 
-**Datos.** Corpus clínico en español, **anotado BIO**; división train/valid; entidades clínicas (entre otras): `CANCER_CONCEPT`, `DRUG`, `CHEMOTHERAPY`, `RADIOTHERAPY`, `TNM`, `STAGE`, `DATE`, `SURGERY`, `SMOKER_STATUS`, `FAMILY`, `METRIC`, `QUANTITY`, `OCURRENCE_EVENT`, `IMPLICIT_DATE`.
+**Datos:** Corpus clínico en español, **anotado BIO**; división train/valid; entidades clínicas (entre otras): `CANCER_CONCEPT`, `DRUG`, `CHEMOTHERAPY`, `RADIOTHERAPY`, `TNM`, `STAGE`, `DATE`, `SURGERY`, `SMOKER_STATUS`, `FAMILY`, `METRIC`, `QUANTITY`, `OCURRENCE_EVENT`, `IMPLICIT_DATE`.
 
-**Pipeline.** Tokenización XLM-R → etiquetado BIO → entrenamiento NER → evaluación → **export a CSV/JSON**.
+**Pipeline:** Tokenización XLM-R → etiquetado BIO → entrenamiento NER → evaluación → **export a CSV/JSON**.
 
 **Entrenamiento (validación).**
 | Época | Val. Loss | Precisión | Recall | F1     | Accuracy |
@@ -101,7 +101,7 @@ En este proyecto clasifico riesgo de **diabetes** en un dataset **desbalanceado*
 - **Distribución original:** 0 = 64 037 · 1 = 5 950  
 - **Distribución tras resampling (solo train):** 0 = 14 875 · 1 = 11 900
 
-**Modelos comparados.** Árbol de Decisión · Random Forest · XGBoost · SVM · MLP
+**Modelos comparados:** Árbol de Decisión · Random Forest · XGBoost · SVM · MLP
 
 **Resultados (validación).**
 | Modelo                       | Accuracy | Precision | Recall | F1-score |   AUC |
