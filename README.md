@@ -1,4 +1,4 @@
-# Hola, Soy Fernando Valencia! <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px">
+# Hola, soy Fernando Valencia! <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="25px">
 
 ## Acerca de mí
 
