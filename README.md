@@ -32,6 +32,16 @@ Dashboard desarrollado en Power BI para monitorear:
 
 👉 Permite **identificar cuellos de botella** y **tomar decisiones basadas en datos** en tiempo real.
 
+- Análisis de Rutas Productivas y Tiempos de Proceso
+<img src="https://github.com/FernandoValencia-DS/FernandoValencia-DS/blob/main/Imagenes/Captura%20de%20pantalla%202025-10-29%20192559.png" width="800"/>
+
+Visualización desarrollada en **Power BI** para analizar las **rutas productivas de los productos**, mostrando:
+- El **flujo entre máquinas y procesos** (Sankey diagram).  
+- Los **tiempos asociados a cada producto y equipo**.  
+- Los **niveles de OEE y ocupación** por máquina.
+
+Este dashboard permite **identificar cuellos de botella** en el flujo de producción, detectar **máquinas críticas** y evaluar **la eficiencia de cada etapa** del proceso.
+
 ### 🔷 NER clínico en historias de cáncer de pulmón (fine-tuning XLM-RoBERTa)
 
 Realicé **fine-tuning de `xlm-roberta-base`** para **Reconocimiento de Entidades Nombradas (NER)** en historias clínicas de **cáncer de pulmón**, partiendo de un dataset **anotado en formato BIO**. El objetivo fue construir un **dataset limpio y consistente** para análisis estadístico/ML, manteniendo una taxonomía clínica clara (p. ej., `CANCER_CONCEPT`, `TNM`, `STAGE`, `DRUG`, etc.).
