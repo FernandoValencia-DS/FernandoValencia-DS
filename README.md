@@ -11,6 +11,27 @@ Luego, en **Carval de Colombia**, continué desarrollando soluciones analíticas
 A raíz de este camino, decidí cursar la **Maestría en Analítica e Inteligencia de Negocios** en la **Universidad del Valle**, donde profundicé en **Machine Learning** y **Deep Learning**. He complementado mi formación con cursos en **Coursera** y **Platzi**.
 
 ## 🚀 Proyectos destacados
+
+### 🔷 Seguimiento de OEE y Tiempos Productivos en Planta
+Automaticé la recopilación de datos de producción conectando directamente con la base de datos, reemplazando procesos manuales de copia/pegado desde la web.  
+Creé un **dashboard dinámico en Power BI** que mostraba el **OEE (Overall Equipment Effectiveness)** y sus componentes (**tiempos productivos, paradas, averías, mantenimientos y limpiezas**), con actualizaciones automáticas varias veces al día.  
+Además, lideré la **capacitación a operarios y jefes de área** en la lectura e interpretación del dashboard, logrando una **mejora significativa en el OEE de planta**.
+
+- Modelado de Datos en Power BI
+<img src="https://github.com/FernandoValencia-DS/FernandoValencia-DS/blob/main/Imagenes/Captura%20de%20pantalla%202025-10-29%20191523.png" width="800"/>
+ Modelo relacional en Power BI que integra información de **producción, recursos, órdenes y tiempos** para el cálculo de indicadores OEE y análisis de productividad.
+
+- Dashboard de Control de Producción
+<img src="https://github.com/FernandoValencia-DS/FernandoValencia-DS/blob/main/Imagenes/Captura%20de%20pantalla%202025-10-29%20191916.png" width="800"/>
+
+Dashboard desarrollado en Power BI para monitorear:
+- **Evolución del OEE por línea**
+- **Distribución de tiempos productivos e improductivos**
+- **Principales causas de paro (TOP 10)**
+- **Tiempos de alistamiento, limpieza y cambios de formato**
+
+👉 Permite **identificar cuellos de botella** y **tomar decisiones basadas en datos** en tiempo real.
+
 ### 🔷 NER clínico en historias de cáncer de pulmón (fine-tuning XLM-RoBERTa)
 
 Realicé **fine-tuning de `xlm-roberta-base`** para **Reconocimiento de Entidades Nombradas (NER)** en historias clínicas de **cáncer de pulmón**, partiendo de un dataset **anotado en formato BIO**. El objetivo fue construir un **dataset limpio y consistente** para análisis estadístico/ML, manteniendo una taxonomía clínica clara (p. ej., `CANCER_CONCEPT`, `TNM`, `STAGE`, `DRUG`, etc.).
