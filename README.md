@@ -173,4 +173,4 @@ En este proyecto clasifico riesgo de **diabetes** en un dataset **desbalanceado*
 [<img src='https://images.credly.com/size/340x340/images/4dd14b9d-2750-43bc-a5f6-27970c0de0fa/image.png' width="120" height="120"/>](https://www.credly.com/badges/e1b26a50-7ed9-4e08-aa94-ef6d3d6db64a/public_url)
 [<img src='https://images.credly.com/size/340x340/images/1447954e-9923-4703-a647-eac80e5f0682/image.png' width="120" height="120"/>](https://www.credly.com/badges/201278fe-5924-4eb3-8031-89783c029290/public_url)
 [<img src='https://images.credly.com/size/340x340/images/46defa53-a922-47bd-94ea-b43488f5cd8a/Data_Science_Methodology_Foundational.png' width="120" height="120"/>](https://www.credly.com/badges/07eec1db-7033-4ddb-bcbf-81b4e420be4b/public_url)
-
+[<img src='https://images.credly.com/size/340x340/images/deb56de3-f26b-4b43-bdb5-ffd0ff8023ee/image.png' width="120" height="120"/>](https://www.credly.com/badges/2f80c3d6-0a28-409f-b6ef-ba5fc3eed5c6/public_url)
