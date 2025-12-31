@@ -150,7 +150,7 @@ En este proyecto clasifico riesgo de **diabetes** en un dataset **desbalanceado*
 - **F1-score (balance):** **MLP** ofrece el mejor compromiso entre detectar diabetes y contener falsos positivos.  
 - **AUC:** **XGBoost (0.977)** es el más alto, muy cercano a **MLP (0.976)** y **RF (0.972)**.
 
-👉 **Notebook:** https://github.com/FernandoValencia-DS/data-science-portfolio/blob/main/Clasificaci%C3%B3n/Diabetes.ipynb
+👉 **Notebook:** https://github.com/FernandoValencia-DS/data-science-portfolio/blob/main/Diabetes.ipynb
 
 
 
