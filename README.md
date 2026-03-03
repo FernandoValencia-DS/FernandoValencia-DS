@@ -12,6 +12,25 @@ A raíz de este camino, decidí cursar la **Maestría en Analítica e Inteligenc
 
 ## 🚀 Proyectos destacados
 
+### 🔷 Credit Risk Prediction — Exploración financiera y despliegue con Streamlit
+
+En este proyecto exploré el dominio de **riesgo crediticio**, entrenando y comparando múltiples modelos de clasificación para predecir si un solicitante representa un riesgo **GOOD** o **BAD**. El foco principal fue la **exploración del dominio financiero** y el despliegue de una solución interactiva con **Streamlit**.
+
+**Modelos comparados:** Árbol de Decisión · Random Forest · XGBoost · SVM · Extra Trees
+
+El mejor resultado lo obtuvo **Extra Trees**, modelo seleccionado para el despliegue final.
+
+**App desplegada en Streamlit.**  
+La aplicación permite ingresar datos del solicitante (edad, empleo, cuentas, monto y duración del crédito) y obtener en tiempo real la predicción de riesgo junto con la probabilidad estimada.
+
+**Highlights del proyecto:**
+- Codificación de variables categóricas con encoders persistidos (`.pkl`)
+- Pipeline completo: entrenamiento → serialización → consumo en app
+- Interfaz limpia con métricas, barra de probabilidad y definiciones de variables
+- Separación de lógica (sidebar de perfil, formulario, panel de resultados)
+
+👉 **App en Streamlit:** *https://credit-risk-app-aumheyecmzslcbjc3wubcj.streamlit.app/*
+
 ### 🔷 Seguimiento de OEE y Tiempos Productivos en Planta
 Automaticé la recopilación de datos de producción conectando directamente con la base de datos, reemplazando procesos manuales de copia/pegado desde la web.  
 Creé un **dashboard dinámico en Power BI** que mostraba el **OEE (Overall Equipment Effectiveness)** y sus componentes (**tiempos productivos, paradas, averías, mantenimientos y limpiezas**), con actualizaciones automáticas varias veces al día.  
